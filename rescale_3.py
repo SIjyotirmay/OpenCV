@@ -15,6 +15,16 @@ def rescaleframe(frame, scale=0.75):
 resized_image = rescaleframe(img,0.5)
 cv.imshow('resized image',resized_image)
 
+
+def changeRes(width,height):
+    # only for live video
+    capture.set(3,width)
+    capture.set(4,height)
+
+
+
+
+
 capture = cv.VideoCapture("./videos/tanushrees_video.mp4")
 
 while True:
